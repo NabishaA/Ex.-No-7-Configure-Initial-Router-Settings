@@ -1,5 +1,7 @@
 ## Ex. No: 7 – Configure Initial Router Settings
-# Date: ___________
+# Date:19.08.2026
+# NAME : NABISHA A
+# REG NO : 212223060177
 ________________________________________
 # Objective
 To perform basic router configuration tasks in Cisco Packet Tracer including:<br>
@@ -16,8 +18,7 @@ ________________________________________<br>
 •	Console cable (RS-232 to Console)<br>
 ________________________________________<br>
 # Network Topology Diagram
-(Insert your Packet Tracer screenshot here showing Router R1 and PC with console connection)
-________________________________________
+<img width="464" height="358" alt="image" src="https://github.com/user-attachments/assets/91a325f7-250a-4f96-a223-5f56b50ddb8a" />
 # Procedure
 # Part 1: Verify the Default Router Configuration
 1.	Connect PC → Router R1 using a Console cable.<br>
@@ -31,7 +32,7 @@ o	Observe hostname, interfaces, vty lines.<br>
 8.	Display startup configuration:<br>
 9.	Router# show startup-config<br>
 o	Router shows: startup-config is not present (because nothing is saved in NVRAM yet).<br>
-________________________________________
+
 # Part 2: Configure and Verify Initial Router Configuration
 1.	Enter global configuration mode:<br>
 2.	Router# configure terminal<br>
@@ -56,7 +57,7 @@ o	On exit, router shows MOTD.<br>
 o	User is prompted for password.<br>
 o	Enter letmein (console) → access User EXEC mode.<br>
 o	Enter itsasecret → access Privileged EXEC mode.<br>
-________________________________________
+
 # Part 3: Save the Running Configuration
 1.	Save running configuration to NVRAM:<br>
 2.	R1# copy running-config startup-config<br>
@@ -68,7 +69,7 @@ o	Confirms saved configuration.<br>
 5.	Save startup config to flash (backup):<br>
 6.	R1# copy startup-config flash<br>
 o	Use show flash to verify file stored in flash.<br>
-________________________________________
+
 # Commands Used
 •	To enter privileged mode: enable<br>
 •	To view config: show running-config, show startup-config<br>
@@ -77,14 +78,14 @@ ________________________________________
 •	To set passwords: enable password, enable secret, line console<br>
 •	To encrypt passwords: service password-encryption<br>
 •	To save configuration: copy running-config startup-config, wr, copy startup-config flash<br>
-________________________________________
-# Output (Attach Screenshots)
-•	Console connection to router<br>
-•	Running configuration before and after<br>
-•	MOTD banner display<br>
-•	Password prompts<br>
-•	Saved configuration in NVRAM and flash<br>
-________________________________________
+
+# Output (Attach Screenshots) >
+
+<img width="510" height="572" alt="image" src="https://github.com/user-attachments/assets/6d01cc56-4994-4dea-87a4-18fcf46ad189" />
+<img width="542" height="560" alt="image" src="https://github.com/user-attachments/assets/07edb378-7280-4a2f-a425-45801e7e5857" />
+<img width="516" height="272" alt="image" src="https://github.com/user-attachments/assets/56e1aac9-ccdf-451a-90cb-66ce40b836e2" />
+<img width="1350" height="640" alt="image" src="https://github.com/user-attachments/assets/8794cb1a-7353-488a-80c0-4fc3c1c53b68" />
+
 # Result
 The router was successfully configured with hostname, banner, encrypted passwords, and secure console access. The configuration was verified and saved to NVRAM and flash, ensuring persistence across reboots.
 
